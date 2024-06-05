@@ -1,0 +1,10 @@
+---
+pagination:
+  data: cityServices
+  size: 1
+  alias: service
+permalink: "services/{{service.name | slugify }}/{{service.city | slugify }}/"
+layout: base.njk
+---
+
+The page for {{service.name}} in {{service.city}}

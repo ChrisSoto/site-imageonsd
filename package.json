@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "imageonsd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0-alpha.10",
+    "clean-css": "^5.3.3"
+  }
+}
