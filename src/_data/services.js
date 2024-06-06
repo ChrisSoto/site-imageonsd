@@ -1,4 +1,4 @@
-const allServices = ["Custom T-Shirts", "Embroidery"];
+const allServices = ["Custom T-Shirts", "Embroidery", "Banners and Stickers", "Engraving"];
 
 const bullets = `- Everything Done In-House
 - Price Breaks on Bulk Orders

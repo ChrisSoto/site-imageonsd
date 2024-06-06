@@ -19,15 +19,16 @@
 
   {% include "header.njk" %}
 
-  <main>
+  <main class="max-w-screen-xl mx-auto">
+    
     <div class="phone-address flex flex-col sm:flex-row justify-center items-center sm:justify-end gap-x-4 p-4">
-    <span class="flex gap-x-2 text-sm sm:text-base sm:pb-0 text-red-500 no-underline	">
-      <a id="call-now-link" href="tel:619-312-0941">(619) 312-0941</a>
-    </span>
-    <span class="flex gap-x-2 text-sm sm:text-base text-gray-800 no-underline	">
-      <a href="https://maps.app.goo.gl/qWeb6zw45rcVYyP78">235 Town Center Parkway Santee, CA 92071</a>
-    </span>
-  </div>
+      <span class="flex gap-x-2 text-sm sm:text-base sm:pb-0 text-red-500 no-underline	">
+        <a id="call-now-link" href="tel:619-312-0941">(619) 312-0941</a>
+      </span>
+      <span class="flex gap-x-2 text-sm sm:text-base text-gray-800 no-underline	">
+        <a href="https://maps.app.goo.gl/qWeb6zw45rcVYyP78">235 Town Center Parkway Santee, CA 92071</a>
+      </span>
+    </div>
 
     {{ content | safe }}
     
