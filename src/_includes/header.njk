@@ -1,17 +1,16 @@
-<header class="banner z-10 px-4">
+<header class="banner z-10 px-4 bg-black">
   <div class="flex flex-col sm:flex-row justify-between items-center w-full max-w-screen-xl">
     
     <a class="brand pt-4 sm:py-4" href="https://imageonsd.com/">
       <img width="211" height="50" src="https://imageonsd.com/app/uploads/2024/04/imageon-logo-small-1.webp" class="attachment-logo-small size-logo-small" alt="" decoding="async" loading="lazy">
     </a>
 
-    <nav class="nav-primary" aria-label="Standard Menu">
-        <div class="menu-standard-menu-container">
-          <ul id="menu-standard-menu" class="nav hidden sm:block">
-            <li id="menu-item-109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-109"><a href="/services/custom-t-shirts/">T‑Shirts</a></li>
-            <li id="menu-item-110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-110"><a href="/services/embroidery/">Embroidery</a></li>
-            <li id="menu-item-111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111"><a href="/services/banners-and-stickers/">Banners</a></li>
-            <li id="menu-item-112" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-112"><a href="/services/engraving/">Engraving</a></li>
+    <nav class="nav-primary" aria-label="Main Menu">
+        <div class="container">
+          <ul id="main-menu" class="nav flex flex-row gap-4">
+            {% for service in services %}
+              <li class="menu-item text-white"><a href="{{ site.url }}/services/{{ service.name | slugify }}">{{ service.name }}</a></li>
+            {% endfor %}
           </ul>
         </div>
     </nav>

@@ -1,6 +1,9 @@
 {
   "name": "imageonsd",
   "description": "Image on SD",
-  "url": "https://imageonsd.com",
-  "logo": "https://imageonsd.com/assets/images/logo.png"
+  "url": "http://localhost:8080",
+  "logo": "https://imageonsd.com/assets/images/logo.png",
+  "hero": "San Diego Custom T-Shirt and <strong>Embroidery</strong> Service Shop",
+  "heroSub": "Dial us or swing by our [[city]] Store for Custom T-Shirt Printing & Embroidery Services.",
+  "heroCopy": "- Everything Done In-House - Price Breaks on Bulk Orders - No Minimums - Quality Guaranteed - Fast Turnaround"
 }
