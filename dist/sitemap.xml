@@ -17,18 +17,18 @@
         </url>
     
         <url>
+            <loc>http://localhost:8080/city/downtown-san-diego/</loc>
+            <lastmod>2024-06-06T16:26:36.584Z</lastmod>
+        </url>
+    
+        <url>
             <loc>http://localhost:8080/</loc>
-            <lastmod>2024-06-06T01:04:35.050Z</lastmod>
+            <lastmod>2024-06-06T16:32:05.174Z</lastmod>
         </url>
     
         <url>
             <loc>http://localhost:8080/services/custom-t-shirts/downtown-san-diego/</loc>
-            <lastmod>2024-06-06T16:26:10.218Z</lastmod>
-        </url>
-    
-        <url>
-            <loc>http://localhost:8080/city/downtown-san-diego/</loc>
-            <lastmod>2024-06-06T16:26:36.584Z</lastmod>
+            <lastmod>2024-06-06T16:32:05.174Z</lastmod>
         </url>
     
 </urlset>
