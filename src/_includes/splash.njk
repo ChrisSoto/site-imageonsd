@@ -1,1 +1,30 @@
-<h1 class="text-3xl mb-4">{{ site.hero | safe }}</h1>
+<div id="hero-copy" class="flex flex-col max-w-screen-xl w-full">
+
+    <div class="flex flex-row">
+      <div id="hero-mobile-image" class="basis-full sm:basis-7/12 md:basis-6/12 lg:basis-5/12 sm:pb-4 sm:pb-16 pl-4" style="background: url('/_assets/mobile_temp_2.webp');">
+
+        <h1 class="font-black text-3xl mb-4">
+          {{ site.hero | safe}}
+        </h1>
+
+        <h2 class="text-md font-bold mb-4">
+          {{ site.heroSub | safe}}
+        </h2>
+        
+        <div class="flex gap-x-4">
+          <button class="bg-red-500 text-white text-lg rounded-full mb-4 p-2 px-6 sm:text-sm poppins-medium"> <a id="call-now-hero-btn" href="tel:619-312-0941">CALL @ 619-312-0941</a> </button>
+          <img src="/_assets/arrow-1.webp" alt="arrow">
+        </div>
+        
+
+        <div class="copy-text">
+          {{ site.heroCopy | safe}}
+        </div>
+      
+      </div>
+
+      <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12" id="hero-image" style="background: url('/_assets/basic-background.webp');"></div>
+
+    </div>
+    
+  </div>
