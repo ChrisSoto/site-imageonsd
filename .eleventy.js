@@ -25,10 +25,13 @@ export default function (eleventyConfig) {
     return data;
   });
 
+  eleventyConfig.addPassthroughCopy({
+    "global.out.css": "global.css",
+  });
+
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
-  })
-  eleventyConfig.addPassthroughCopy("src/css");
+  });
 };
 
 export const config = {
