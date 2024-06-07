@@ -2,7 +2,10 @@
 export default {
   content: ["./src/**/*.{njk,md}"],
   theme: {
-    extend: {},
+    extend: {
+      'mobile-bg': "url('/_assets/mobile_temp_2.webp')",
+      'desktop-bg': "url('/_assets/basic-background.webp')",
+    },
   },
   plugins: [],
 }

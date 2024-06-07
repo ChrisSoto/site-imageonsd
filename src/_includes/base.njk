@@ -8,10 +8,10 @@
   <title>{{ title }}</title>
   <meta name="robots" content="noindex,nofollow">
   <!-- capture the CSS content as a Nunjucks variable -->
-  {% set css %} {% include "css/global.out.css" %} {% endset %}
+  {% set tailwind %} {% include "css/global.out.css" %} {% endset %}
   <!-- feed it through our cssmin filter to minify -->
   <style>
-    {{ css | cssmin | safe }}
+    {{ tailwind | cssmin | safe }}
   </style>
 </head>
 

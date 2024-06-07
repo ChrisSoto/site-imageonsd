@@ -1,5 +1,5 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
-import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin, Image } from "@11ty/eleventy-img";
 import CleanCSS from 'clean-css';
 
 import cities from './src/_data/cities.js';
@@ -39,6 +39,8 @@ export default function (eleventyConfig) {
     "global.out.css": "global.css",
   });
 
+  eleventyConfig.addPassthroughCopy("src/_assets");
+
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
@@ -50,4 +52,3 @@ export const config = {
     output: "dist"
   }
 };
-

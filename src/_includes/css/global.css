@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.copy-text ul {
+  @apply list-disc list-inside ml-4;
+}
+
+.copy-text ul ::marker {
+  color: red;
+}
+
+.copy-text ul li {
+  @apply font-bold;
+}
