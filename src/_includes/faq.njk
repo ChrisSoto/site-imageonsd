@@ -1,0 +1,16 @@
+<div id="faq" class="p-4">
+
+  <h2 class="text-red-500 text-4xl font-bold">Frequently Asked Questions</h2>
+
+  <div class="accordion">
+    {% if cityService %}
+      {{ cityService.faq | safe }}
+    {% elseif service %}
+      {{ service.faq | safe }}
+    {% else %}
+      {{ site.faq | safe }}
+    {% endif %}
+  </div>
+
+</div>
+

@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ description }}">
-  <title>{{ title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ site.title }}</title>
   <meta name="robots" content="noindex,nofollow">
-  <!-- capture the CSS content as a Nunjucks variable -->
   {% set tailwind %} {% include "css/global.out.css" %} {% endset %}
-  <!-- feed it through our cssmin filter to minify -->
   <style>
     {{ tailwind | cssmin | safe }}
   </style>
+
+
 </head>
 
 <body>
@@ -38,4 +38,23 @@
 
 </body>
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+  function setupAccordion() {
+    const accordion = $('.accordion');
+    if (accordion) {
+      $('.accordion-panel').slideUp();
+      $('.accordion-panel:first').slideDown();
+      $('.accordion-title:first').toggleClass('active');
+      $('.accordion-panel:first').toggleClass('active');
+      $('.accordion-title').on('click', function() {
+          $('.accordion-panel').filter($(this).next()).toggleClass('active');
+          $(this).toggleClass('active');
+          $(this).next().slideToggle();
+      });
+    }
+  }
+
+  setupAccordion();
+</script>
 </html>

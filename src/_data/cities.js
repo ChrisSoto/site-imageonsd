@@ -1,3 +1,5 @@
+import CustomTShirtFaqs from "./tshirt_faqs.js";
+
 const cities = [
   {
     "name": "Downtown San Diego",
@@ -78,5 +80,9 @@ const cities = [
     "map": "https://goo.gl/maps/5Kp2jKsX5yJ2"
   }
 ]
+
+for (let i = 0; i < cities.length; i++) {
+  cities[i].faq = CustomTShirtFaqs[i];
+}
 
 export default cities;

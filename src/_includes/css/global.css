@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .copy-text ul {
-  @apply list-disc list-inside ml-4;
+  @apply list-disc list-inside ml-1;
 }
 
 .copy-text ul ::marker {
@@ -12,4 +12,73 @@
 
 .copy-text ul li {
   @apply font-bold;
+}
+
+#hero-mobile-image {
+  @apply bg-no-repeat bg-right-bottom bg-[size:40%];
+}
+
+#hero-image {
+  @apply bg-no-repeat bg-left-top bg-[size:cover];
+}
+
+#faq a {
+  @apply text-red-500;
+}
+
+#faq h2 {
+  @apply mb-4 text-black;
+}
+
+#faq h3 {
+  @apply font-bold text-3xl clear-both;
+}
+
+#faq h4 {
+  @apply font-bold text-2xl clear-both;
+}
+
+#faq p {
+  @apply text-base mb-4;
+}
+
+#faq img {
+  @apply inline-block float-right ml-4 mb-4 drop-shadow-lg w-full sm:w-1/2 md:w-1/4 lg:w-1/5;
+}
+
+#faq ul {
+  @apply list-disc list-outside ml-6 marker:text-red-500 mb-3;
+}
+
+#faq ul strong {
+  @apply text-gray-700 font-semibold font-bold;
+}
+
+#faq .accordion .accordion-panel {
+  @apply pt-2;   
+}
+
+#faq .accordion .accordion-title {
+  @apply clear-both cursor-pointer hover:text-red-500 transition-colors duration-100 border-t-2 border-slate-200 px-4 py-2 font-bold hover:bg-slate-100;
+}
+
+#faq .accordion .accordion-title:after {
+  content: "+";
+  float: right;
+  font-size: 1.5em;
+  line-height: 1rem;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+#faq .accordion .accordion-title.active:after {
+  content: "-";
+}
+
+#faq .accordion .accordion-title.active {
+  @apply bg-slate-100 border-b-2 border-slate-200;
+}
+
+#faq .accordion .accordion-title:first-of-type {
+  @apply border-t-0 mt-5;
 }
