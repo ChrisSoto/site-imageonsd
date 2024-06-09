@@ -4,8 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ site.description }}">
-  <title>{{ site.title }}</title>
+
+  {% if cityService %}
+    <meta name="description" content="{{ cityService.description }}">
+  {% elseif service %}
+    <meta name="description" content="{{ service.description }}">
+  {% else %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
+  
+  {% if cityService %}
+    <title>{{ cityService.title }}</title>
+  {% elseif service %}
+    <title>{{ service.title }}</title>
+  {% else %}
+    <title>{{ site.title }}</title>
+  {% endif %}
+
   <meta name="robots" content="noindex,nofollow">
   {% set tailwind %} {% include "css/global.out.css" %} {% endset %}
   <style>
