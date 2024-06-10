@@ -1,0 +1,31 @@
+---
+pagination:
+  data: collections.blog
+  size: 6
+  alias: posts
+eleventyExcludeFromCollections: true
+tags: blog
+layout: base.njk
+---
+
+<div class="flex flex-col m-4">
+  <h1 class="text-red-500 text-5xl font-bold mb-8">Blog</h1>
+
+  {% for post in posts %}
+    <div class="post flex flex-col sm:flex-row mb-4 items-center">
+      <div class="flex flex-col sm:mr-4">
+        <h2 class="text-red-500 text-3xl font-bold cursor-pointer mb-2"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <p class="text-pretty">{{ post.data.excerpt | safe }}</p>
+      </div>
+      <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-96 h-96 sm:w-40 sm:h-40 my-4 sm:mb-0">
+    </div>
+  {% endfor %}
+</div>
+
+<nav aria-labelledby="my-pagination" class="w-full mb-8 mt-8">
+  <ol class="flex flex-row justify-end gap-4">
+{%- for pageEntry in pagination.pages %}
+    <li><a class="bg-red-500 text-white text-lg rounded-full p-2 px-6" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
+{%- endfor %}
+  </ol>
+</nav>

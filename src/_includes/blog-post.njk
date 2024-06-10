@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+
+<div id="blog-post" class="p-4 pt-0">
+
+  <h1 class="mb-4 text-3xl font-bold text-red-500">{{ title | safe }}</h1>
+
+  {{ content | safe }}
+
+</div>
+
+<div class="pt-12">
+  {% include "contact-form.njk" %}
+</div>

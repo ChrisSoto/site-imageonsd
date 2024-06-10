@@ -4,18 +4,18 @@
     <div class="flex sm:flex-row flex-col w-full lg:w-1/2 mb-4 lg:mb-0">
       <div class="flex flex-row justify-around w-full lg:w-1/2">
         <div class="flex flex-col text-white">
-          Custom T-Shirts
+          <div class="font-bold pb-4">Custom T-Shirts</div>
           <div class="flex flex-col">
             {%-  for city in cities %}
-              <a href="{{ site.url }}/services/custom-t-shirts/{{ city.name | slugify }}" class="text-gray-500 hover:text-gray-400">{{ city.name }}</a>
+              <a href="{{ site.url }}/services/custom-t-shirts/{{ city.name | slugify }}" class="text-gray-500 hover:text-gray-400 pb-1">{{ city.name }}</a>
             {%-  endfor %}
           </div>
         </div>
         <div class="flex flex-col text-white">
-          Embroidery
+          <div class="font-bold pb-4">Embroidery</div>
           <div class="flex flex-col">
             {%-  for city in cities %}
-              <a href="{{ site.url }}/services/embroidery/{{ city.name | slugify }}" class="text-gray-500 hover:text-gray-400">{{ city.name }}</a>
+              <a href="{{ site.url }}/services/embroidery/{{ city.name | slugify }}" class="text-gray-500 hover:text-gray-400 pb-1">{{ city.name }}</a>
             {%-  endfor %}
           </div>
         </div>
@@ -33,10 +33,10 @@
       </div>
     </div>
     
-    <div class="map w-full lg:w-1/2">
+    <div class="map w-full lg:w-1/2 pb-4">
 
-      {%- if city -%}
-        <iframe width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="{{ city.map }}"></iframe>      
+      {%- if cityService.map -%}
+        <iframe width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="{{ cityService.map }}"></iframe>      
       {%- else -%}
         <iframe width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.1450379035978!2d-116.9882310228081!3d32.84141127363686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbfd552f3f92dd%3A0x9ad812eb2b47a615!2s235%20Town%20Center%20Pkwy%2C%20Santee%2C%20CA%2092071!5e0!3m2!1sen!2sus!4v1708550794779!5m2!1sen!2sus"></iframe>      
       {%- endif -%}
@@ -44,3 +44,9 @@
     </div>
   </div>
 </footer>
+<div class="flex justify-center p-2 bg-gray-950 text-gray-500 font-light">
+    <div class="flex flex-col sm:flex-row justify-between items-center max-w-screen-xl w-full">
+      <a href="mailto:imageonsantee@gmail.com">imageonsantee@gmail.com</a>
+      <div>©2024 Image On Inc. All Rights Reserved</div>
+    </div>
+  </div>

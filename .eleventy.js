@@ -1,9 +1,16 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import markdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
+
 import CleanCSS from 'clean-css';
 
 import cities from './src/_data/cities.js';
 import serviceData from './src/_data/service-data.js';
+
+const mdOptions = {
+  html: true,
+};
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -31,6 +38,7 @@ export default function (eleventyConfig) {
           heroSub: serviceData[i].heroSub.replace("[[city]]", cities[j].name),
           heroCopy: serviceData[i].heroCopy.replace("[[city]]", cities[j].name),
           faq: cities[j].faq.replaceAll("[[city]]", cities[j].name),
+          map: cities[j].map
         };
         data.push(cityService);
       }
@@ -61,6 +69,8 @@ export default function (eleventyConfig) {
     
     return data;
   });
+
+  eleventyConfig.setLibrary("md", markdownIt(mdOptions).use(markdownItAttrs));
 
   eleventyConfig.addPassthroughCopy({
     "global.out.css": "global.css",
