@@ -1,5 +1,18 @@
+function getUrl(env) {
+  if (env === "production") {
+    return process.env.PROD_URL;
+  } else if (env === "development") {
+    return process.env.DEV_URL;
+  } else if (env === "local") {
+    return "http://localhost:8080";
+  }
+}
+
+const url = getUrl(process.env.ENVIRONMENT);
+
 
 const project = {
+  url: url,
   firebaseConfig: {
     apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,

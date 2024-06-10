@@ -6,7 +6,7 @@ import { bullets, titleFn, descriptionFn, heroFn, heroSubFn } from "./page-data.
 const allServices = [
   {
     "name": "Custom T-Shirts",
-    "menuName": "T-Shirts",
+    "menuName": "T&nbsp;-&nbsp;Shirts",
     "faq": CustomTShirtFaqs[0],
   },
   {
