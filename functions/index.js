@@ -7,6 +7,8 @@
  * See a full list of supported triggers at https://firebase.google.com/docs/functions
  */
 
+// https://cloud.google.com/functions/docs/writing/write-http-functions#handling_cors_requests
+
 const {onCall} = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 const getDatabase = require("firebase-admin/database");
