@@ -121,7 +121,7 @@
 
     <b class="pb-2 text-3xl text-gray-100 text-center poppins-bold">Get a Free Quote!</b>
 
-    <form name="contact" method="post" enctype="multipart/form-data" id="contact-form" action="https://us-central1-imageonsd-af038.cloudfunctions.net/helloWorld" novalidate="">
+    <form name="contact" method="post" enctype="multipart/form-data" id="contact-form" action="https://us-central1-imageonsd-af038.cloudfunctions.net/addContact" novalidate="">
       <div class="form_fields">
 
         <div class="grid sm:grid-cols-3 gap-2 sm:gap-4 mb-4">
@@ -315,15 +315,24 @@
   }
   setupAccordion();
   function sendForm(event) {
-    console.log('test')
     event.preventDefault();
-    const form = document.getElementById('contact-form');
-    const formData = new FormData(form);
-    const url = form.action;
-    console.log(formData, url);
+    const form = $('#contact-form');
+    const formAction = document.getElementById('contact-form');
+    const formData = form.serializeArray();
+    const data = {
+      "name": formData[0].value,
+      "email": formData[1].value,
+      "phone": formData[2].value,
+      "details": formData[3].value
+    };
+    const url = formAction.action;
+    console.log(data, url);
     fetch(url, {
       method: 'POST',
-      body: formData
+      body: formData,
+      headers: {
+        "Content-Type": "application/json",
+      },
     })
     .then(response => response.json())
     .then(data => {
