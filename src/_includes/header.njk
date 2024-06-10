@@ -9,7 +9,7 @@
         <div class="container">
           <ul id="main-menu" class="nav flex flex-row gap-x-2 pt-2">
             {% for service in services %}
-              <li class="menu-item justify-center items-center bg-gray-950 h-full p-3 border-b-2 border-gray-800 hover:border-blue-800 text-gray-200 text-lg hover:text-white transition-all duration-300"><a href="{{ site.url }}/services/{{ service.name | slugify }}">{{ service.menuName }}</a></li>
+              <li class="menu-item justify-center items-center bg-gray-950 h-full p-3 border-b-2 border-gray-800 hover:border-blue-800 text-gray-200 text-lg hover:text-white transition-all duration-300 whitespace-nowrap"><a href="{{ site.url }}/services/{{ service.name | slugify }}">{{ service.menuName | safe }}</a></li>
             {% endfor %}
           </ul>
         </div>

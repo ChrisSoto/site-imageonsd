@@ -14,21 +14,19 @@
 
     <b class="pb-2 text-3xl text-gray-100 text-center poppins-bold">Get a Free Quote!</b>
 
-    <form method="post" enctype="multipart/form-data" id="contact-form" action="/" novalidate="">
+    <form name="contact" method="post" enctype="multipart/form-data" id="contact-form" action="https://us-central1-imageonsd-af038.cloudfunctions.net/helloWorld" novalidate="">
       <div class="form_fields">
 
         <div class="grid sm:grid-cols-3 gap-2 sm:gap-4 mb-4">
 
           <div class="field">
             <label class="field_label block mb-2 text-sm text-gray-100 font-bold " for="full-name">Full Name<span class="required text-yellow-500 mb-2 text-sm font-medium italic pl-2">(Required)</span></label>
-            <input name="full_name" id="full-name" type="text" value="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="John Doe"
-              aria-required="true" aria-invalid="false">
+            <input name="full_name" id="full-name" type="text" value="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="John Doe">
           </div>
 
           <div class="field">
             <label class="field_label block mb-2 text-sm text-gray-100 font-bold" for="e-mail">Email<span class="required text-yellow-500 mb-2 text-sm font-medium italic pl-2">(Required)</span></label>
-            <input name="e_mail" id="e-mail" type="email" value="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="john.doe@gmail.com"
-              aria-required="true" aria-invalid="false">
+            <input name="e_mail" id="e-mail" type="email" value="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="john.doe@gmail.com">
           </div>
 
           <div class="field">
@@ -41,15 +39,13 @@
         <div class="field mb-4">
           <label class="field_label block mb-2 text-sm text-gray-100 font-bold" for="project-details">Project Details<span class="required text-yellow-500 mb-2 text-sm font-medium italic pl-2">(Required)</span></label>
           <textarea name="project_details" id="project-details" class="textarea shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3"
-            placeholder="8x4 banner, 2 colors, by next thursday" aria-required="true" aria-invalid="false" rows="5"
-            cols="50"></textarea>
+            placeholder="8x4 banner, 2 colors, by next thursday" rows="5" cols="50"></textarea>
         </div>
 
       </div>
 
-      <div class="form_footer flex flex-row justify-center items-center w-full cursor-pointer text-sm uppercase bg-yellow-400 text-red-500 p-4 rounded-full font-medium hover:bg-red-700 transition-colors duration-300">
-        <input type="submit" id="gform_submit_button_4" class="gform_button button uppercase" value="Submit" onclick="" onkeypress="if( event.keyCode == 13 ){}">
-      </div>
+      <input class="form_footer w-full flex flex-row justify-center items-center w-full cursor-pointer text-sm uppercase bg-yellow-400 text-red-500 p-4 rounded-full font-medium hover:bg-red-700 transition-colors duration-300" id="contact-submit" type="submit" class="button uppercase" value="Submit" >
+
     </form>
 
   </div>

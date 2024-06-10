@@ -70,5 +70,22 @@
     }
   }
   setupAccordion();
+  function sendForm(event) {
+    console.log('test')
+    event.preventDefault();
+    const form = document.getElementById('contact-form');
+    const formData = new FormData(form);
+    const url = form.action;
+    console.log(formData, url);
+    fetch(url, {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    });
+  }
+  $('#contact-submit').on('click', sendForm);
 </script>
 </html>
