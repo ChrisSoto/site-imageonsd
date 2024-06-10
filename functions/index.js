@@ -10,7 +10,6 @@
 // https://cloud.google.com/functions/docs/writing/write-http-functions#handling_cors_requests
 
 const {onCall} = require("firebase-functions/v2/https");
-const logger = require("firebase-functions/logger");
 const getDatabase = require("firebase-admin/database");
 
 // Create and deploy your first functions
@@ -18,10 +17,10 @@ const getDatabase = require("firebase-admin/database");
 
 exports.addContact = onCall((request, response) => {
   return getDatabase().ref("contacts").push(request.body)
-    .then(() => {
-      response.status(200).send();
-    })
-    .catch((error) => {
-      response.status(500).send(error);
-    });
+      .then(() => {
+        response.status(200).send();
+      })
+      .catch((error) => {
+        response.status(500).send(error);
+      });
 });
