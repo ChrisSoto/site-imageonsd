@@ -233,7 +233,6 @@
       });
     }
   }
-
   setupAccordion();
 </script>
 </html>

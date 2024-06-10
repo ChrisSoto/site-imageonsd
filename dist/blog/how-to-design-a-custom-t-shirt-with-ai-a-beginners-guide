@@ -250,7 +250,6 @@
       });
     }
   }
-
   setupAccordion();
 </script>
 </html>

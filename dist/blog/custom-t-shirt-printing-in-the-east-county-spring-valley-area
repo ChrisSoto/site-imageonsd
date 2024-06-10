@@ -257,7 +257,6 @@
       });
     }
   }
-
   setupAccordion();
 </script>
 </html>
