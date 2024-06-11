@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-    <meta name="description" content="Quality Get high-quality custom T-shirt printing and embroidery with no minimum orders, fast turnaround, and guaranteed quality. Enjoy price breaks on bulk orders. Everything is done in-house. near San Diego. &lt;b&gt;Personalize&lt;/b&gt; your apparel with no minimum order requirements and enjoy great discounts on bulk purchases. Visit our store today!">
+    <meta name="description" content="Quality Get high-quality custom T-shirt printing and embroidery with no minimum orders, fast turnaround, and guaranteed quality. Enjoy price breaks on bulk orders. Everything is done in-house. near San Diego. Personalize your apparel with no minimum order requirements and enjoy great discounts on bulk purchases. Visit our store today!">
   
   
   
@@ -14,6 +14,7 @@
   
 
   <link rel="canonical" href="https://imageonsd.com/blog/why-shopping-local-is-better-than-on-demand-a-guide-for-consumers" />
+  <meta name="ahrefs-site-verification" content="20d7dc01d49948b43262b9e6711ac192f21e8a07165f7fd7bb52f04399eaad59">
 
   
   <style>
@@ -130,7 +131,7 @@
           </div>
 
           <div class="field">
-            <label class="field_label block mb-2 text-sm text-gray-100 font-bold" for="phone_number">Phone</label>
+            <label class="field_label block mb-2 text-sm text-gray-100 font-bold" for="phone-number">Phone</label>
             <input name="phone_number" id="phone-number" type="tel" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="ex. 619-312-0941" aria-invalid="false">
           </div>
 
@@ -294,5 +295,23 @@
   }
 
   $('#contact-submit').on('click', testForm);
+</script>
+<!-- Google Tag Manager -->
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KB2XJ8GH');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-976P3SJ94R"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-976P3SJ94R');
 </script>
 </html>
