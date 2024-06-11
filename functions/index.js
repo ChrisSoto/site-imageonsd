@@ -16,7 +16,7 @@ const {getFirestore} = require("firebase-admin/firestore");
 initializeApp();
 
 exports.addContact = onRequest(
-    {cors: ["https://dev.imageonsd.com"]},
+    {cors: ["https://imageonsd.com", "https://dev.imageonsd.com", "https://staging.imageonsd.com", "http://localhost:8080"]},
     async (request, response) => {
       const {name, email, phone, details} = request.body;
       const writeResult = await getFirestore()
