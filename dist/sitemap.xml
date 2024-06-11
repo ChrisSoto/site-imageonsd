@@ -2,58 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/how-much-does-getting-custom-t-shirts-cost-a-comprehensive-guide</loc>
-            <lastmod>2024-06-10T17:31:21.155Z</lastmod>
+            <loc>http://localhost:8080/</loc>
+            <lastmod>2024-06-07T17:58:30.793Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/custom-business-apparel-by-imageon-custom-t-shirts-more</loc>
-            <lastmod>2024-06-10T17:31:21.155Z</lastmod>
+            <loc>http://localhost:8080/services/custom-t-shirts/</loc>
+            <lastmod>2024-06-07T17:58:36.183Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/t-shirts-screen-printing-in-santee-california</loc>
-            <lastmod>2024-06-10T17:31:21.155Z</lastmod>
+            <loc>http://localhost:8080/services/custom-t-shirts/downtown-san-diego/</loc>
+            <lastmod>2024-06-07T20:47:31.345Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/custom-t-shirt-printing-in-the-east-county-spring-valley-area</loc>
-            <lastmod>2024-06-10T17:31:21.155Z</lastmod>
+            <loc>http://localhost:8080/blog/how-to-design-a-custom-t-shirt-with-ai-a-beginners-guide</loc>
+            <lastmod>2024-06-10T02:46:46.766Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/how-to-design-a-custom-t-shirt-with-ai-a-beginners-guide</loc>
-            <lastmod>2024-06-10T17:31:21.156Z</lastmod>
+            <loc>http://localhost:8080/blog/why-shopping-local-is-better-than-on-demand-a-guide-for-consumers</loc>
+            <lastmod>2024-06-10T02:47:16.211Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/2024-custom-t-shirt-trends-a-nostalgic-escape-to-simpler-times</loc>
-            <lastmod>2024-06-10T17:31:21.156Z</lastmod>
+            <loc>http://localhost:8080/blog/boost-your-san-diego-brand-with-dtg-printing-8-reasons-small-businesses-love-it</loc>
+            <lastmod>2024-06-10T02:57:55.845Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/boost-your-san-diego-brand-with-dtg-printing-8-reasons-small-businesses-love-it</loc>
-            <lastmod>2024-06-10T17:31:21.156Z</lastmod>
+            <loc>http://localhost:8080/blog/custom-business-apparel-by-imageon-custom-t-shirts-more</loc>
+            <lastmod>2024-06-10T03:46:08.962Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/blog/why-shopping-local-is-better-than-on-demand-a-guide-for-consumers</loc>
-            <lastmod>2024-06-10T17:31:21.156Z</lastmod>
+            <loc>http://localhost:8080/blog/how-much-does-getting-custom-t-shirts-cost-a-comprehensive-guide</loc>
+            <lastmod>2024-06-10T03:48:51.164Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/services/custom-t-shirts/downtown-san-diego/</loc>
-            <lastmod>2024-06-10T17:31:21.156Z</lastmod>
+            <loc>http://localhost:8080/blog/t-shirts-screen-printing-in-santee-california</loc>
+            <lastmod>2024-06-10T03:50:39.428Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/</loc>
-            <lastmod>2024-06-10T17:31:21.157Z</lastmod>
+            <loc>http://localhost:8080/blog/custom-t-shirt-printing-in-the-east-county-spring-valley-area</loc>
+            <lastmod>2024-06-10T03:52:41.579Z</lastmod>
         </url>
     
         <url>
-            <loc>https://dev.imageonsd.com/services/custom-t-shirts/</loc>
-            <lastmod>2024-06-10T17:31:21.157Z</lastmod>
+            <loc>http://localhost:8080/blog/2024-custom-t-shirt-trends-a-nostalgic-escape-to-simpler-times</loc>
+            <lastmod>2024-06-10T04:01:31.994Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>http://localhost:8080/city/downtown-san-diego/</loc>
+            <lastmod>2024-06-11T02:52:36.118Z</lastmod>
         </url>
     
 </urlset>

@@ -1,0 +1,10 @@
+---
+pagination:
+  data: cities
+  size: 1
+  alias: city
+permalink: "city/{{city.name | slugify }}/"
+layout: base.njk
+---
+
+{% include "layout-splash.njk" %}

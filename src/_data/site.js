@@ -6,11 +6,11 @@ console.log(project);
 
 const site = {
   "name": process.env.production ? "Image On" : "imageonsd",
-  "title": titleFn("Custom T-shirt Printing & Embroidery", "| No Minimums, Fast Turnaround", "San Diego"),
+  "title": titleFn("San Diego", "Custom T-shirt Printing & Embroidery", "| No Minimums, Fast Turnaround"),
   "description": descriptionFn("Get high-quality custom T-shirt printing and embroidery with no minimum orders, fast turnaround, and guaranteed quality. Enjoy price breaks on bulk orders. Everything is done in-house.", "San Diego"),
-  "url": "https://dev.imageonsd.com",
+  "url": "http://localhost:8080",
   "logo": "https://imageonsd.com/assets/images/logo.png",
-  "hero": heroFn("Custom T-Shirt <strong class=text-black>and</strong>&nbsp;Embroidery", "San Diego"),
+  "hero": heroFn("Custom T-Shirt <strong class=text-black><br>and</strong>&nbsp;Embroidery", "San Diego"),
   "heroSub": heroSubFn("Custom T-Shirt and Embroidery", "San Diego"),
   "heroCopy": bullets,
   "faq": CustomTShirtFaqs[0].replaceAll('[[city]]', 'San Diego'),

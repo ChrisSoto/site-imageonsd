@@ -9,6 +9,8 @@
     <meta name="description" content="{{ cityService.description }}">
   {% elseif service %}
     <meta name="description" content="{{ service.description }}">
+  {% elseif city %}
+    <meta name="description" content="{{ city.description }}">
   {% else %}
     <meta name="description" content="{{ site.description }}">
   {% endif %}
@@ -17,6 +19,8 @@
     <title>{{ cityService.title }}</title>
   {% elseif service %}
     <title>{{ service.title }}</title>
+  {% elseif city %}
+    <title>{{ city.title }}</title>
   {% else %}
     <title>{{ site.title }}</title>
   {% endif %}
