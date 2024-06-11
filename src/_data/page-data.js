@@ -21,7 +21,7 @@ const titleFn = (cityData, serviceData, textData) => {
 const descriptionFn = (serviceData, cityData) => {
   let service = serviceData || 'Custom T-Shirt and Embroidery Services';
   let city = cityData || 'San Diego';
-  return "Quality " + service + " near " + city + ". <b>Personalize</b> your apparel with no minimum order requirements and enjoy great discounts on bulk purchases. Visit our store today!";
+  return "Quality " + service + " near " + city + ". Personalize your apparel with no minimum order requirements and enjoy great discounts on bulk purchases. Visit our store today!";
 }
 
 const heroFn = (cityData, serviceData, textData) => {

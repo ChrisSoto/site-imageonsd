@@ -25,7 +25,8 @@
     <title>{{ site.title }}</title>
   {% endif %}
 
-  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="{{site.url}}{{ page.url }}" />
+
   {% set tailwind %} {% include "css/global.out.css" %} {% endset %}
   <style>
     {{ tailwind | cssmin | safe }}
