@@ -7,6 +7,7 @@ import CleanCSS from 'clean-css';
 
 import cities from './src/_data/cities.js';
 import serviceData from './src/_data/service-data.js';
+import { titleFn } from "./src/_data/page-data.js";
 
 const mdOptions = {
   html: true,
@@ -32,7 +33,7 @@ export default function (eleventyConfig) {
         let cityService = {
           city: cities[j].name,
           name: serviceData[i].name,
-          title: serviceData[i].title.replace("[[city]]", cities[j].name),
+          title: titleFn('| Custom Designs, Quality Guaranteed, Fast Turnaround', serviceData[i].name, cities[j].name),
           description: serviceData[i].description.replace("[[city]]", cities[j].name),
           hero: serviceData[i].hero.replace("[[city]]", cities[j].name),
           heroSub: serviceData[i].heroSub.replace("[[city]]", cities[j].name),

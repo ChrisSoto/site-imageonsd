@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-    <meta name="description" content="Quality Custom T-Shirt and Embroidery near San Diego. &lt;b&gt;Personalize&lt;/b&gt; your apparel with no minimum order requirements and enjoy great discounts on bulk purchases. Visit our store today!">
+    <meta name="description" content="Quality Get high-quality custom T-shirt printing and embroidery with no minimum orders, fast turnaround, and guaranteed quality. Enjoy price breaks on bulk orders. Everything is done in-house. near San Diego. &lt;b&gt;Personalize&lt;/b&gt; your apparel with no minimum order requirements and enjoy great discounts on bulk purchases. Visit our store today!">
   
   
   
-    <title>San Diego Custom T-Shirt and Embroidery Services</title>
+    <title>| No Minimums, Fast Turnaround Custom T-shirt Printing &amp; Embroidery Services</title>
   
 
   <meta name="robots" content="noindex,nofollow">
@@ -217,6 +217,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script>
+  let formSuccess = false;
   function setupAccordion() {
     const accordion = $('.accordion');
     if (accordion) {
@@ -237,25 +238,27 @@
     const form = $('#contact-form');
     const formAction = document.getElementById('contact-form');
     const formData = form.serializeArray();
-    const data = {
-      "name": formData[0].value,
-      "email": formData[1].value,
-      "phone": formData[2].value,
-      "details": formData[3].value
+    let data = {
+      name: formData[0].value,
+      email: formData[1].value,
+      phone: formData[2].value,
+      details: formData[3].value
     };
-    const url = formAction.action;
-    console.log(data, url);
+    let url = formAction.action;
+    data = JSON.stringify(data);
+    // url = 'http://127.0.0.1:5001/imageonsd-af038/us-central1/addContact';
     fetch(url, {
       method: 'POST',
-      body: formData,
+      body: data,
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "application/json; charset=utf-8",
       },
     })
     .then(response => response.json())
     .then(data => {
-      console.log(data);
-    });
+      formSuccess = true;
+    })
+    .catch(err => console.log('err', err));
   }
   $('#contact-submit').on('click', sendForm);
 </script>

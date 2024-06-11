@@ -6,8 +6,8 @@ console.log(project);
 
 const site = {
   "name": process.env.production ? "Image On" : "imageonsd",
-  "title": titleFn("Custom T-Shirt and Embroidery", "San Diego"),
-  "description": descriptionFn("Custom T-Shirt and Embroidery", "San Diego"),
+  "title": titleFn("Custom T-shirt Printing & Embroidery", "| No Minimums, Fast Turnaround", "San Diego"),
+  "description": descriptionFn("Get high-quality custom T-shirt printing and embroidery with no minimum orders, fast turnaround, and guaranteed quality. Enjoy price breaks on bulk orders. Everything is done in-house.", "San Diego"),
   "url": "https://dev.imageonsd.com",
   "logo": "https://imageonsd.com/assets/images/logo.png",
   "hero": heroFn("Custom T-Shirt <strong class=text-black>and</strong>&nbsp;Embroidery", "San Diego"),

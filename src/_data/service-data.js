@@ -32,7 +32,7 @@ for (let i = 0; i < allServices.length; i++) {
   serviceData.push({
     "name": allServices[i].name,
     "menuName": allServices[i].menuName,
-    "title": titleFn(allServices[i].name, "[[city]]"),
+    "title": titleFn('| Personal & Business, Quality Guaranteed', allServices[i].name, "[[city]]"),
     "description": descriptionFn(allServices[i].name, "[[city]]"),
     "hero": heroFn(allServices[i].name, "[[city]]"),
     "heroSub": heroSubFn(allServices[i].name, "[[city]]"),

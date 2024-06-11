@@ -11,10 +11,11 @@ const bullets = `
   <li><b class='text-red-500'>Fast</b> Turnaround</li>
 </ul>`;
 
-const titleFn = (serviceData, cityData) => {
-  let service = serviceData || 'Custom T-Shirt and Embroidery Services';
+const titleFn = (textData, serviceData, cityData) => {
+  let text = textData || '| No Minimums, Fast Turnaround';
+  let service = serviceData || 'Custom T-Shirt and Embroidery';
   let city = cityData || 'San Diego';
-  return city + " " + service + " Services";
+  return city + " " + service + " " + text;
 }
 
 const descriptionFn = (serviceData, cityData) => {
