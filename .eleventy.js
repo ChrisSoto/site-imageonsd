@@ -1,7 +1,5 @@
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-import markdownIt from "markdown-it";
-import markdownItAttrs from "markdown-it-attrs";
 
 import CleanCSS from 'clean-css';
 
@@ -9,9 +7,6 @@ import cityData from './src/_data/city-data.js';
 import serviceData from './src/_data/service-data.js';
 import { bullets, heroFn, heroSubFn, titleFn } from "./src/_data/page-data.js";
 
-const mdOptions = {
-  html: true,
-};
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);

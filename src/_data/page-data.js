@@ -25,10 +25,10 @@ const descriptionFn = (serviceData, cityData) => {
 }
 
 const heroFn = (cityData, serviceData, textData) => {
-  let service = serviceData || 'Custom T-Shirt <strong class=text-black>and</strong>&nbsp;Embroidery';
+  let service = serviceData || 'Custom T-Shirt <strong class=text-black><br>and</strong>&nbsp;Embroidery';
   let city = cityData || 'San Diego';
-  let text = textData || '| No Minimums, Fast Turnaround';
-  return city + "<br><strong class='text-red-500'>" + service + "</strong><br>Service Shop" + " " + text;
+  let text = textData || 'Service Shop';
+  return city + "<br><strong class='text-red-500'>" + service + "</strong><br>" + " " + text;
 }
 
 const heroSubFn = (cityData, serviceData) => {

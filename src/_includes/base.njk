@@ -75,8 +75,9 @@
     }
   }
   setupAccordion();
+
+  // contact form
   function sendForm(event) {
-    event.preventDefault();
     const form = $('#contact-form');
     const formAction = document.getElementById('contact-form');
     const formData = form.serializeArray();
@@ -99,9 +100,34 @@
     .then(response => response.json())
     .then(data => {
       formSuccess = true;
+      clearForm();
+      alert('Thank you for your interest. We will be in touch shortly.');
     })
     .catch(err => console.log('err', err));
   }
-  $('#contact-submit').on('click', sendForm);
+  // $('#contact-submit').on('click', sendForm);
+  function testForm(event) {
+    event.preventDefault();
+    if (inputValid('#full-name') && inputValid('#e-mail') && inputValid('#project-details')) {
+      console.log('valid');
+      sendForm(event);
+    } else {
+      alert('Please check your form for errors.');
+    }
+  }
+
+  function clearForm() {
+    $('#contact-form').trigger('reset');
+  }
+
+  function inputValid(id) {
+    const prop = $(id);
+    if (prop.length == 0) {
+      return false
+    }
+    return prop[0].validity.valid;
+  }
+
+  $('#contact-submit').on('click', testForm);
 </script>
 </html>

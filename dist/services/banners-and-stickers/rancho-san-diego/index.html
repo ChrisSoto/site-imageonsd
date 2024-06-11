@@ -77,13 +77,13 @@
 
         <h1 class="font-black text-3xl mb-4">
           
-            Banners & Stickers<br><strong class="text-red-500">Rancho San Diego</strong><br>Service Shop | No Minimums, Fast Turnaround
+            Rancho San Diego<br><strong class="text-red-500">Banners & Stickers</strong><br> Service Shop
           
         </h1>
 
         <h2 class="text-md font-bold mb-4">
           
-            Dial us or swing by our Banners & Stickers Store for Rancho San Diego Services.
+            Dial us or swing by our Rancho San Diego Store for Banners & Stickers Services.
           
         </h2>
         
@@ -136,24 +136,24 @@
 
           <div class="field">
             <label class="field_label block mb-2 text-sm text-gray-100 font-bold " for="full-name">Full Name<span class="required text-yellow-500 mb-2 text-sm font-medium italic pl-2">(Required)</span></label>
-            <input name="full_name" id="full-name" type="text" value="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="John Doe">
+            <input name="full_name" id="full-name" type="text" required="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="John Doe">
           </div>
 
           <div class="field">
             <label class="field_label block mb-2 text-sm text-gray-100 font-bold" for="e-mail">Email<span class="required text-yellow-500 mb-2 text-sm font-medium italic pl-2">(Required)</span></label>
-            <input name="e_mail" id="e-mail" type="email" value="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="john.doe@gmail.com">
+            <input name="e_mail" id="e-mail" type="email" required="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="john.doe@gmail.com">
           </div>
 
           <div class="field">
             <label class="field_label block mb-2 text-sm text-gray-100 font-bold" for="phone_number">Phone</label>
-            <input name="phone_number" id="phone_number" type="tel" value="" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="ex. 619-312-0941" aria-invalid="false">
+            <input name="phone_number" id="phone-number" type="tel" class="shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="ex. 619-312-0941" aria-invalid="false">
           </div>
 
         </div>
 
         <div class="field mb-4">
           <label class="field_label block mb-2 text-sm text-gray-100 font-bold" for="project-details">Project Details<span class="required text-yellow-500 mb-2 text-sm font-medium italic pl-2">(Required)</span></label>
-          <textarea name="project_details" id="project-details" class="textarea shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="8x4 banner, 2 colors, by next thursday" rows="5" cols="50"></textarea>
+          <textarea name="project_details" id="project-details" required="" class="textarea shadow-sm bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-3" placeholder="8x4 banner, 2 colors, by next thursday" rows="5" cols="50"></textarea>
         </div>
 
       </div>
@@ -321,8 +321,9 @@
     }
   }
   setupAccordion();
+
+  // contact form
   function sendForm(event) {
-    event.preventDefault();
     const form = $('#contact-form');
     const formAction = document.getElementById('contact-form');
     const formData = form.serializeArray();
@@ -345,9 +346,34 @@
     .then(response => response.json())
     .then(data => {
       formSuccess = true;
+      clearForm();
+      alert('Thank you for your interest. We will be in touch shortly.');
     })
     .catch(err => console.log('err', err));
   }
-  $('#contact-submit').on('click', sendForm);
+  // $('#contact-submit').on('click', sendForm);
+  function testForm(event) {
+    event.preventDefault();
+    if (inputValid('#full-name') && inputValid('#e-mail') && inputValid('#project-details')) {
+      console.log('valid');
+      sendForm(event);
+    } else {
+      alert('Please check your form for errors.');
+    }
+  }
+
+  function clearForm() {
+    $('#contact-form').trigger('reset');
+  }
+
+  function inputValid(id) {
+    const prop = $(id);
+    if (prop.length == 0) {
+      return false
+    }
+    return prop[0].validity.valid;
+  }
+
+  $('#contact-submit').on('click', testForm);
 </script>
 </html>

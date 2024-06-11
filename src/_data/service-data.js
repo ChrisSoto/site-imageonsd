@@ -34,8 +34,8 @@ for (let i = 0; i < allServices.length; i++) {
     "menuName": allServices[i].menuName,
     "title": titleFn("[[city]]", allServices[i].name, '| Personal & Business, Quality Guaranteed'),
     "description": descriptionFn(allServices[i].name, "[[city]]"),
-    "hero": heroFn(allServices[i].name, "[[city]]"),
-    "heroSub": heroSubFn(allServices[i].name, "[[city]]"),
+    "hero": heroFn("[[city]]", allServices[i].name),
+    "heroSub": heroSubFn("[[city]]", allServices[i].name),
     "heroCopy": bullets,
     "faq": allServices[i].faq,
   });

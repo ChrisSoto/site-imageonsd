@@ -8,6 +8,8 @@
             {{ cityService.hero | safe }}
           {% elseif service %}
             {{ service.hero | safe }}
+          {% elseif city %}
+            {{ city.hero | safe }}
           {% else %}
             {{ site.hero | safe }}
           {% endif %}
@@ -18,6 +20,8 @@
             {{ cityService.heroSub | safe }}
           {% elseif service %}
             {{ service.heroSub | safe }}
+          {% elseif city %}
+            {{ city.heroSub | safe }}
           {% else %}
             {{ site.heroSub | safe }}
           {% endif %}
@@ -33,7 +37,9 @@
           {% if cityService %}
             {{ cityService.heroCopy | safe }}
           {% elseif service %}
-            {{ service.heroCopy | safe }}
+            {{ service.heroCopy | safe }}\
+          {% elseif city %}
+            {{ city.heroCopy | safe }}
           {% else %}
             {{ site.heroCopy | safe }}
           {% endif %}
