@@ -21,6 +21,19 @@ exports.addContact = onRequest(
       const {name, email, phone, details} = request.body;
       const writeResult = await getFirestore()
           .collection("contacts")
-          .add({name, email, phone, details});
+          .add({
+            to: "admin@imageonsd.com",
+            message: {
+              subject: `Lead from Site: ${name}`,
+              body: `Name: ${name}\n
+                Phone: ${phone}\n
+                Details: ${details}\n
+                Email: ${email}`,
+              html: `<p>Name: ${name}</p><br>
+                <p>Email: <a href="mailto:${email}">${email}</a></p><br>
+                <p>Phone: <a href="tel:${phone}">${phone}</a></p><br>
+                <p>Details: ${details}</p>`,
+            },
+          });
       response.json({result: `Message written with ID: ${writeResult.id}`});
     });
