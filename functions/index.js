@@ -22,7 +22,7 @@ exports.addContact = onRequest(
       const writeResult = await getFirestore()
           .collection("contacts")
           .add({
-            to: "admin@imageonsd.com",
+            to: "imageonprintingservice@gmail.com, admin@imageonsd.com",
             message: {
               subject: `Lead from Site: ${name}`,
               body: `Name: ${name}\n
