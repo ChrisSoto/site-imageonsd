@@ -4,7 +4,7 @@ export const faq_1 = `
 <h4 class="accordion-title text-xl">How Much Does It Cost to Print T-Shirts?</h4>
 
 <ul class="accordion-panel">
-    <img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+    <img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Pricing Variables:</strong> Costs vary depending on factors like the number of shirts, their types, and the complexity of your artwork.</li>
     <li><strong>Bulk Order Savings:</strong> Large quantity orders for local businesses and teams in [[city]] qualify for significant discounts.</li>
     <li><strong>Complex Design Costs:</strong> Prices can increase with more intricate designs and multiple color use.</li>
@@ -59,7 +59,7 @@ export const faq_2 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Step into Image On, your trusted print partner servicing [[city]]! Our reputation as a leading print shop stems from our commitment to excellence and innovation. Specializing in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we handle all production processes in-house to ensure precision and quality. Serving the diverse needs of San Diego County, we're here to provide answers to your most pressing questions. Let's explore together!</p><h4 class="accordion-title text-xl">What Are the Costs Associated with T-Shirt Printing?</h4>
 <ul class="accordion-panel">
-    <img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+    <img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Cost Determinants:</strong> Pricing is influenced by the number of t-shirts, their styles, and the complexity of your design.</li>
     <li><strong>Discounts for Bulk Orders:</strong> Local businesses and teams in [[city]] can benefit from significant savings when ordering in bulk.</li>
     <li><strong>Design Complexity Impact:</strong> Costs vary with the intricacy of the design and the use of multiple colors.</li>
@@ -108,7 +108,7 @@ const faq_3 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Welcome to Image On, your local printing expert servicing [[city]]! We're more than just a print shop - we're a dedicated team of professionals committed to delivering exceptional services right here in our community. From <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we handle it all in-house, ensuring quality and efficiency. Serving the diverse needs of San Diego County, we're here to provide clarity to your common queries. Let's dive in!</p><h4 class="accordion-title text-xl">How Much Does It Cost to Print T-Shirts?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Pricing Variables:</strong> Costs vary depending on factors like the number of shirts, their types, and the complexity of your artwork.</li>
     <li><strong>Bulk Order Savings:</strong> Large quantity orders for local businesses and teams in [[city]] qualify for significant discounts.</li>
     <li><strong>Complex Design Costs:</strong> Prices can increase with more intricate designs and multiple color use.</li>
@@ -158,7 +158,7 @@ const faq_4 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Greetings from Image On, your one-stop destination for printing excellence serving [[city]]! As a locally-rooted print shop, we're committed to delivering top-notch services right here in the heart of our community. Specializing in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, our team handles every aspect of production in-house. Get ready to experience seamless service and unmatched quality tailored to the diverse needs of San Diego County. Now, let's dive into some FAQs!</p><h4 class="accordion-title text-xl">How Much Will It Cost to Print My T-Shirts?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Cost Factors:</strong> Several factors influence pricing, including the quantity of t-shirts, their styles, and the design's complexity.</li>
     <li><strong>Bulk Order Discounts:</strong> Significant discounts are available for local businesses and teams in [[city]] that order in large quantities.</li>
     <li><strong>Design Complexity:</strong> The more intricate and colorful the design, the higher the cost may be.</li>
@@ -208,7 +208,7 @@ const faq_5 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Welcome to Image On, your premier print shop in [[city]]! We take immense pride in our role as a comprehensive printing hub, managing all aspects of production under one roof. With our extensive expertise in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we're dedicated to serving the vibrant community of San Diego County. Get ready to have your questions answered as we embark on this informative journey!</p><h4 class="accordion-title text-xl">How Much Does It Cost to Print T-Shirts?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Pricing Variables:</strong> Costs vary depending on factors like the number of shirts, their types, and the complexity of your artwork.</li>
     <li><strong>Bulk Order Savings:</strong> Large quantity orders for local businesses and teams in [[city]] qualify for significant discounts.</li>
     <li><strong>Complex Design Costs:</strong> Prices can increase with more intricate designs and multiple color use.</li>
@@ -258,7 +258,7 @@ const faq_6 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Greetings from Image On, your one-stop destination for printing excellence serving [[city]]! As a locally-rooted print shop, we're committed to delivering top-notch services right here in the heart of our community. Specializing in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, our team handles every aspect of production in-house. Get ready to experience seamless service and unmatched quality tailored to the diverse needs of San Diego County. Now, let's dive into some FAQs!</p><h4 class="accordion-title text-xl">How Much Does It Cost to Print T-Shirts?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Pricing Variables:</strong> Costs vary depending on factors like the number of shirts, their types, and the complexity of your artwork.</li>
     <li><strong>Bulk Order Savings:</strong> Large quantity orders for local businesses and teams in [[city]] qualify for significant discounts.</li>
     <li><strong>Complex Design Costs:</strong> Prices can increase with more intricate designs and multiple color use.</li>
@@ -308,7 +308,7 @@ const faq_7 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Step into Image On, your trusted print partner servicing [[city]]! Our reputation as a leading print shop stems from our commitment to excellence and innovation. Specializing in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we handle all production processes in-house to ensure precision and quality. Serving the diverse needs of San Diego County, we're here to provide answers to your most pressing questions. Let's explore together!</p><h4 class="accordion-title text-xl">What Are the Prices for Custom T-Shirt Printing?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Cost Factors:</strong> The price depends on several elements including the quantity of t-shirts, their styles, and the complexity of your design.</li>
     <li><strong>Volume Discounts:</strong> We offer substantial discounts for local businesses and teams in [[city]] who place bulk orders.</li>
     <li><strong>Design Intricacy:</strong> Costs can fluctuate based on the complexity of the design and the number of colors used.</li>
@@ -358,7 +358,7 @@ const faq_8 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Step into Image On, your trusted print partner servicing [[city]]! Our reputation as a leading print shop stems from our commitment to excellence and innovation. Specializing in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we handle all production processes in-house to ensure precision and quality. Serving the diverse needs of San Diego County, we're here to provide answers to your most pressing questions. Let's explore together!</p><h4 class="accordion-title text-xl">What Are the Costs Associated with T-Shirt Printing?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Cost Determinants:</strong> Pricing is influenced by the number of t-shirts, their styles, and the complexity of your design.</li>
     <li><strong>Discounts for Bulk Orders:</strong> Local businesses and teams in [[city]] can benefit from significant savings when ordering in bulk.</li>
     <li><strong>Design Complexity Impact:</strong> Costs vary with the intricacy of the design and the use of multiple colors.</li>
@@ -407,7 +407,7 @@ const faq_9 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Step into Image On, your trusted print partner servicing [[city]]! Our reputation as a leading print shop stems from our commitment to excellence and innovation. Specializing in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we handle all production processes in-house to ensure precision and quality. Serving the diverse needs of San Diego County, we're here to provide answers to your most pressing questions. Let's explore together!</p><h4 class="accordion-title text-xl">How Much Will My T-Shirt Printing Cost?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Price Determinants:</strong> The cost is influenced by factors such as the number of shirts, their types, and the intricacy of your design.</li>
     <li><strong>Large Order Discounts:</strong> Local businesses and teams in [[city]] can benefit from significant savings on bulk orders.</li>
     <li><strong>Design Details:</strong> The complexity and color variety of your design can affect the final price.</li>
@@ -457,7 +457,7 @@ const faq_10 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Discover Image On, the go-to destination for printing solutions servicing [[city]]! As a comprehensive print shop, we take pride in our ability to oversee every aspect of production under one roof. With a focus on <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a> services, we cater to the unique requirements of San Diego County residents. Join us as we unravel the answers to some frequently asked questions!</p><h4 class="accordion-title text-xl">How Are T-Shirt Printing Prices Determined?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Cost Variables:</strong> Pricing is based on the quantity of t-shirts, the types, and the design complexity.</li>
     <li><strong>Bulk Pricing:</strong> Enjoy significant discounts on large orders for local businesses and groups in [[city]].</li>
     <li><strong>Design Complexity Impact:</strong> Costs can increase with more detailed designs and additional colors.</li>
@@ -507,7 +507,7 @@ const faq_11 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Greetings from Image On, your one-stop destination for printing excellence serving [[city]]! As a locally-rooted print shop, we're committed to delivering top-notch services right here in the heart of our community. Specializing in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, our team handles every aspect of production in-house. Get ready to experience seamless service and unmatched quality tailored to the diverse needs of San Diego County. Now, let's dive into some FAQs!</p><h4 class="accordion-title text-xl">How Much Will My T-Shirt Printing Cost?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Price Determinants:</strong> The cost is influenced by factors such as the number of shirts, their types, and the intricacy of your design.</li>
     <li><strong>Large Order Discounts:</strong> Local businesses and teams in [[city]] can benefit from significant savings on bulk orders.</li>
     <li><strong>Design Details:</strong> The complexity and color variety of your design can affect the final price.</li>
@@ -559,7 +559,7 @@ const faq_12 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Welcome to Image On, your local printing expert servicing [[city]]! We're more than just a print shop - we're a dedicated team of professionals committed to delivering exceptional services right here in our community. From <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we handle it all in-house, ensuring quality and efficiency. Serving the diverse needs of San Diego County, we're here to provide clarity to your common queries. Let's dive in!</p><h4 class="accordion-title text-xl">How Are T-Shirt Printing Prices Determined?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Cost Variables:</strong> Pricing is based on the quantity of t-shirts, the types, and the design complexity.</li>
     <li><strong>Bulk Pricing:</strong> Enjoy significant discounts on large orders for local businesses and groups in [[city]].</li>
     <li><strong>Design Complexity Impact:</strong> Costs can increase with more detailed designs and additional colors.</li>
@@ -609,7 +609,7 @@ const faq_13 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Welcome to Image On, your premier print shop in [[city]]! We take immense pride in our role as a comprehensive printing hub, managing all aspects of production under one roof. With our extensive expertise in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a>, we're dedicated to serving the vibrant community of San Diego County. Get ready to have your questions answered as we embark on this informative journey!</p><h4 class="accordion-title text-xl">How Much Does It Cost to Print T-Shirts?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Pricing Variables:</strong> Costs vary depending on factors like the number of shirts, their types, and the complexity of your artwork.</li>
     <li><strong>Bulk Order Savings:</strong> Large quantity orders for local businesses and teams in [[city]] qualify for significant discounts.</li>
     <li><strong>Complex Design Costs:</strong> Prices can increase with more intricate designs and multiple color use.</li>
@@ -659,7 +659,7 @@ const faq_14 = `
 <h3>Custom T-shirts for [[city]], brought to you by Image On!</h3>
 <p>Step into Image On, where printing excellence meets community pride servicing [[city]]! We're honored to be your comprehensive print shop, managing all aspects of production with precision and care. With our specialization in <a href="https://imageonsd.com/services/custom-t-shirts/">custom printed t-shirts</a> and <a href="https://imageonsd.com/services/embroidery/">embroidery</a> services, we're dedicated to meeting the unique demands of San Diego County residents. Join us as we address some of the frequently asked questions that come our way!</p><h4 class="accordion-title text-xl">How Much Will It Cost to Print My T-Shirts?</h4>
 <ul class="accordion-panel">
-<img src="https://imageonsd.com/app/uploads/2024/04/custom_t-shirts-300x300.webp" alt="" class="faq-image" />
+<img src="/_assets/custom_t-shirts.webp" alt="" class="faq-image" />
     <li><strong>Cost Factors:</strong> Several factors influence pricing, including the quantity of t-shirts, their styles, and the design's complexity.</li>
     <li><strong>Bulk Order Discounts:</strong> Significant discounts are available for local businesses and teams in [[city]] that order in large quantities.</li>
     <li><strong>Design Complexity:</strong> The more intricate and colorful the design, the higher the cost may be.</li>

@@ -87,6 +87,18 @@
   @apply mb-12;
 }
 
+#blog-post ul {
+  @apply list-disc list-outside ml-6 marker:text-red-500 mb-3;
+}
+
+#blog-post p {
+  @apply mb-2;
+}
+
+#blog-post img {
+  @apply my-4;
+}
+
 #blog-post h2 {
   @apply my-4 text-black font-bold text-3xl sm:text-left text-center;
 }

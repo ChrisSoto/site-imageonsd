@@ -7,23 +7,42 @@
 
   {% if cityService %}
     <meta name="description" content="{{ cityService.description }}">
-  {% elseif service %}
-    <meta name="description" content="{{ service.description }}">
-  {% elseif city %}
-    <meta name="description" content="{{ city.description }}">
-  {% else %}
-    <meta name="description" content="{{ site.description }}">
-  {% endif %}
-  
-  {% if cityService %}
     <title>{{ cityService.title }}</title>
   {% elseif service %}
+    <meta name="description" content="{{ service.description }}">
     <title>{{ service.title }}</title>
   {% elseif city %}
+    <meta name="description" content="{{ city.description }}">
     <title>{{ city.title }}</title>
   {% else %}
+    <meta name="description" content="{{ site.description }}">
     <title>{{ site.title }}</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "image": "/_assets/custom_t-shirts.webp",
+      "name": "ImageOn Custom T-shirts and Embroidery",
+      "review": [{
+        "@type": "Review",
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Aggregate"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+        },
+        "datePublished": "2024-06-01"
+      }]
+    }
+    </script>
+
   {% endif %}
+
+  <link rel="icon" type="image/x-icon" href="/_assets/favicon.ico">
 
   <link rel="canonical" href="{{site.url}}{{ page.url }}" />
   <meta name="ahrefs-site-verification" content="20d7dc01d49948b43262b9e6711ac192f21e8a07165f7fd7bb52f04399eaad59">
@@ -83,15 +102,13 @@
     const form = $('#contact-form');
     const formAction = document.getElementById('contact-form');
     const formData = form.serializeArray();
-    let data = {
-      name: formData[0].value,
-      email: formData[1].value,
-      phone: formData[2].value,
-      details: formData[3].value
-    };
+
+    let data = getData(formData);
+
     let url = formAction.action;
     data = JSON.stringify(data);
     // url = 'http://127.0.0.1:5001/imageonsd-af038/us-central1/addContact';
+
     fetch(url, {
       method: 'POST',
       body: data,
@@ -108,10 +125,9 @@
     .catch(err => alert(err));
   }
   // $('#contact-submit').on('click', sendForm);
-  function testForm(event) {
+  function submitForm(event) {
     event.preventDefault();
     if (inputValid('#full-name') && inputValid('#e-mail') && inputValid('#project-details')) {
-      console.log('valid');
       sendForm(event);
     } else {
       alert('Please check your form for errors.');
@@ -122,6 +138,33 @@
     $('#contact-form').trigger('reset');
   }
 
+  function getData(data) {
+    let name = data[0].value;
+    let email = data[1].value;
+    let phone = data[2].value;
+    let details = data[3].value;
+    
+    if (!name) {
+      name = localStorage.getItem('full-name');
+    }
+    if (!email) {
+      email = localStorage.getItem('e-mail');
+    }
+    if (!phone) {
+      phone = localStorage.getItem('phone-number');
+    }
+    if (!details) {
+      details = localStorage.getItem('project-details');
+    }
+
+    return {
+      name,
+      email,
+      phone,
+      details
+    };
+  }
+
   function inputValid(id) {
     const prop = $(id);
     if (prop.length == 0) {
@@ -130,7 +173,14 @@
     return prop[0].validity.valid;
   }
 
-  $('#contact-submit').on('click', testForm);
+  function writeToLocalStorage(id) {
+    var edValue = document.getElementById(id);
+    var value = edValue.value;
+    localStorage.setItem(id, value)
+  }
+
+  $('#contact-submit').on('click', submitForm);
+
 </script>
 <!-- Google Tag Manager -->
 <script>

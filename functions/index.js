@@ -19,6 +19,10 @@ exports.addContact = onRequest(
     {cors: ["https://imageonsd.com", "https://dev.imageonsd.com", "https://staging.imageonsd.com", "http://localhost:8080"]},
     async (request, response) => {
       const {name, email, phone, details} = request.body;
+      if (email == null || phone == null) {
+        response.json({error: "Missing required fields"});
+        return;
+      }
       const writeResult = await getFirestore()
           .collection("contacts")
           .add({
