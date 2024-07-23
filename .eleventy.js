@@ -5,7 +5,7 @@ import CleanCSS from 'clean-css';
 
 import cityData from './src/_data/city-data.js';
 import serviceData from './src/_data/service-data.js';
-import { bullets, heroFn, heroSubFn, titleFn } from "./src/_data/page-data.js";
+import { bullets, heroFn, heroSubFn, titleFn, titleFn2 } from "./src/_data/page-data.js";
 
 
 export default function (eleventyConfig) {
@@ -25,17 +25,35 @@ export default function (eleventyConfig) {
 
     for (let i = 0; i < serviceData.length; i++) {
       for (let j = 0; j < cityData.length; j++) {
-        let cityService = {
-          city: cityData[j].name,
-          name: serviceData[i].name,
-          title: titleFn(cityData[j].name, serviceData[i].name, '| Custom Designs, Quality Guaranteed, Fast Turnaround'),
-          description: serviceData[i].description.replace("[[city]]", cityData[j].name),
-          hero: serviceData[i].hero.replace("[[city]]", cityData[j].name),
-          heroSub: serviceData[i].heroSub.replace("[[city]]", cityData[j].name),
-          heroCopy: serviceData[i].heroCopy,
-          faq: cityData[j].faq.replaceAll("[[city]]", cityData[j].name),
-          map: cityData[j].map
-        };
+
+        let cityService = {};
+
+        if (cityData[j].name === 'Lakeside') {
+          cityService = {
+            city: cityData[j].name,
+            name: serviceData[i].name,
+            title: titleFn2(cityData[j].name, serviceData[i].name, '| Hats Polos and More!'),
+            description: serviceData[i].description.replace("[[city]]", cityData[j].name),
+            hero: serviceData[i].hero.replace("[[city]]", cityData[j].name),
+            heroSub: serviceData[i].heroSub.replace("[[city]]", cityData[j].name),
+            heroCopy: serviceData[i].heroCopy,
+            faq: cityData[j].faq.replaceAll("[[city]]", cityData[j].name),
+            map: cityData[j].map
+          };
+        } else {
+          cityService = {
+            city: cityData[j].name,
+            name: serviceData[i].name,
+            title: titleFn(cityData[j].name, serviceData[i].name, '| Custom Designs, Quality Guaranteed, Fast Turnaround'),
+            description: serviceData[i].description.replace("[[city]]", cityData[j].name),
+            hero: serviceData[i].hero.replace("[[city]]", cityData[j].name),
+            heroSub: serviceData[i].heroSub.replace("[[city]]", cityData[j].name),
+            heroCopy: serviceData[i].heroCopy,
+            faq: cityData[j].faq.replaceAll("[[city]]", cityData[j].name),
+            map: cityData[j].map
+          };
+        }
+        
         data.push(cityService);
       }
     }

@@ -1,4 +1,4 @@
-import { titleFn } from "./page-data.js";
+import { titleFn, titleFn2 } from "./page-data.js";
 import CustomTShirtFaqs from "./tshirt_faqs.js";
 
 const cityData = [
@@ -58,7 +58,7 @@ const cityData = [
   },
   {
     "name": "Lakeside",
-    "title": titleFn("Lakeside", "Custom T-shirt Printing & Embroidery", "| No Minimums, Fast Turnaround"),
+    "title": titleFn2("Lakeside", "T-shirt Printing and Custom Embroidery Services", "| Hats Polos and More!"),
     "description": "San Diego, CA",
     "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53628.94770500196!2d-116.98774436869154!3d32.85030234526516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d958a39ef6648f%3A0xf47e2b6bbf978cd9!2sLakeside%2C%20CA!5e0!3m2!1sen!2sus!4v1714152529599!5m2!1sen!2sus"
   },

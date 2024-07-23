@@ -18,6 +18,19 @@ const titleFn = (cityData, serviceData, textData) => {
   return city + " " + service + " " + text;
 }
 
+const titleFn2 = (cityData, serviceData, textData) => {
+  if (serviceData === 'Embroidery') {
+    serviceData = 'Custom Embroidery Services';
+  }
+  if (serviceData === 'Custom T-Shirts') {
+    serviceData = 'T-shirt Printing';
+  }
+  let service = serviceData || 'T-shirt Printing and Custom Embroidery Services';
+  let city = cityData || 'San Diego';
+  let text = textData || '| Hats Polos and More!';
+  return service + " " + city + " " + text;
+}
+
 const descriptionFn = (serviceData, cityData) => {
   let service = serviceData || 'Custom T-Shirt and Embroidery Services';
   let city = cityData || 'San Diego';
@@ -37,4 +50,4 @@ const heroSubFn = (cityData, serviceData) => {
   return "Dial us or swing by our " + city + " Store for " + service + " Services.";
 }
 
-export { name, url, logo, titleFn, descriptionFn, heroFn, heroSubFn, bgImage, bullets };
+export { name, url, logo, titleFn, titleFn2, descriptionFn, heroFn, heroSubFn, bgImage, bullets };
