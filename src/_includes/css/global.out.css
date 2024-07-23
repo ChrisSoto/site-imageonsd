@@ -932,16 +932,16 @@ video {
   background-image: url('/_assets/basic-background.webp');
 }
 
+.bg-\[url\(\'\/_assets\/custom_embroidery_bg\.webp\'\)\] {
+  background-image: url('/_assets/custom_embroidery_bg.webp');
+}
+
 .bg-\[url\(\'\/_assets\/custom_t_shirt_bg\.webp\'\)\] {
   background-image: url('/_assets/custom_t_shirt_bg.webp');
 }
 
 .bg-\[url\(\'\/_assets\/mobile_temp_2\.webp\'\)\] {
   background-image: url('/_assets/mobile_temp_2.webp');
-}
-
-.bg-\[url\(\'\/_assets\/custom_embroidery_bg\.webp\'\)\] {
-  background-image: url('/_assets/custom_embroidery_bg.webp');
 }
 
 .bg-clip-content {
@@ -1016,6 +1016,10 @@ video {
   padding-left: 1rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pr-0 {
   padding-right: 0px;
 }
@@ -1034,10 +1038,6 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
 }
 
 .text-center {
