@@ -1,0 +1,17 @@
+<div class="examples mb-8">
+  <h2 class="text-3xl bg-zinc-900 font-bold p-4 text-white text-center sm:text-left">Check Out Our Work</h2>
+  <div class="flex flex-row justify-around items-center flex-wrap bg-zinc-600">
+    {%- for example in tshirtExamples -%}
+    <a href="{{ example.image }}" class="hover:scale-105 hover:z-10 hover:shadow-2xl transition-transform duration-300 example flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/5 relative">
+      <img eleventy:widths="600" class=" bg-clip-content	" src="{{ example.image }}" alt="{{ example.description }}">
+      <h4 class="absolute bottom-0 right-0 p-4 text-center text-white bg-black/50 font-bold"><span class="inline sm:hidden">Click to View </span>{{ example.name }}</h4>
+    </a>
+    {%- endfor -%}
+  </div>
+</div>
+
+<div class="p-4 mb-16">
+  <h3 class="text-3xl font-bold text-red-500 text-center mb-4">Custom T-Shirts and Apparel to Elevate Your Style at ImageOn</h3>
+
+  <p>ImageOn is your ultimate destination for custom t-shirts and apparel in San Diego. Our wide range of services includes custom t-shirt printing in San Diego, custom t-shirts, and custom shirts Oceanside CA. Whether you need custom t-shirts for an event, business, or personal use, our custom t-shirt shop is equipped to handle orders of any size. We offer personalized t-shirt printing near me, custom t-shirt same day services, and exceptional custom design shirts near me. Elevate your wardrobe with our custom apparel printing near me and experience the difference that quality and creativity can make. Visit ImageOn today and let us bring your custom apparel ideas to life.</p>
+</div>

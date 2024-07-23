@@ -2,7 +2,7 @@ import { bullets, titleFn, descriptionFn, heroFn, heroSubFn, titleFn2 } from "./
 import CustomTShirtFaqs from "./tshirt_faqs.js";
 import project from "./project.js";
 
-console.log(project);
+// don't add trailing slash
 
 const site = {
   "name": process.env.production ? "Image On" : "imageonsd",
