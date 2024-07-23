@@ -8,9 +8,9 @@ const homeExamples = [
   },
   {
     id: 2,
-    name: 'Tote Bags',
-    description: 'Image On custom tote bags, DTG printing for perfect colors.',
-    image: '/_assets/custom_printing.webp',
+    name: 'Business T\'s',
+    description: 'Image On custom t-shirts, vibrant colors, and custom designs.',
+    image: '/_assets/t_shirt_3.webp',
     link: '/custom-t-shirt-printing/',
   },
   {
@@ -18,21 +18,21 @@ const homeExamples = [
     name: 'Hat Embroidery',
     description: 'Hat embroidery, complex designs, great quality.',
     image: '/_assets/embroidered_hat_3.webp',
-    link: '/custom-embroidery/',
+    link: '/custom-embroidery-services/',
   },
   {
     id: 4,
     name: 'Shirt Embroidery',
     description: 'Custom T-Shirt Embroidery, for your business.',
     image: '/_assets/shirt_embroidery.webp',
-    link: '/custom-embroidery/',
+    link: '/custom-embroidery-services/',
   },
   {
     id: 5,
-    name: 'Banners',
-    description: 'Image On custom banners, vibrant colors, long lasting.',
-    image: '/_assets/banner_1.webp',
-    link: '/custom-banners/',
+    name: 'Patche Embroidery',
+    description: 'Image On custom patches, highest quality.',
+    image: '/_assets/patch.webp',
+    link: '/custom-embroidery-services/',
   },
 ];
 

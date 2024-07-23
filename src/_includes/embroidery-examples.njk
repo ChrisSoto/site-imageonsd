@@ -1,0 +1,17 @@
+<div class="examples mb-8">
+  <h2 class="text-3xl bg-zinc-900 font-bold p-4 text-white text-center sm:text-left">Check Out Our Work</h2>
+  <div class="flex flex-row justify-around items-center flex-wrap bg-zinc-600">
+    {%- for example in embroideryExamples -%}
+    <a href="{{ example.image }}" class="hover:scale-105 hover:z-10 hover:shadow-2xl transition-transform duration-300 example flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/5 relative">
+      <img eleventy:widths="600" class=" bg-clip-content	" src="{{ example.image }}" alt="{{ example.description }}">
+      <h4 class="absolute bottom-0 right-0 p-4 text-center text-white bg-black/50 font-bold"><span class="inline sm:hidden">Click to View </span>{{ example.name }}</h4>
+    </a>
+    {%- endfor -%}
+  </div>
+</div>
+
+<div class="p-4 mb-16">
+  <h3 class="text-3xl font-bold text-red-500 text-center mb-4">Embroidery Takes Your Business to the Next Level at ImageOn</h3>
+
+  <p>Welcome to ImageOn, your premier destination for top-quality embroidery services in San Diego and the surrounding areas. At ImageOn, we specialize in a wide range of embroidery and printing services, ensuring that your custom apparel and merchandise stand out with precision and style. Whether you need custom embroidery nearby for a special event, personalized gifts from an embroidery gift shop, or professional embroidery and printing for your business, our skilled team is here to bring your vision to life.</p>
+</div>

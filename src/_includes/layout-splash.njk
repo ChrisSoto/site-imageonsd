@@ -3,5 +3,11 @@
 {% include "products.njk" %}
 {%- if '/' == page.url -%}
   {% include "home-examples.njk" %}
-{% endif %}
+{%- endif -%}
+{%- if '/custom-t-shirts/' in page.url -%}
+  {% include "tshirt-examples.njk" %}
+{%- endif -%}
+{%- if '/embroidery/' in page.url -%}
+  {% include "embroidery-examples.njk" %}
+{%- endif -%}
 {% include "faq.njk" %}
