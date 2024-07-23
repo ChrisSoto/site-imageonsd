@@ -1,0 +1,13 @@
+<div class="examples my-8">
+  <h2 class="text-3xl bg-zinc-900 font-bold p-4 text-white text-center sm:text-left">Check Out Our Work</h2>
+  <div class="flex flex-row justify-around items-center flex-wrap bg-zinc-600">
+    {%- for example in homeExamples -%}
+    <a href="{{ example.link }}" class="hover:scale-105 hover:z-10 hover:shadow-2xl transition-transform duration-300 example flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/5 relative">
+      <img class=" bg-clip-content	" src="{{ example.image }}" alt="{{ example.description }}">
+      <h4 class="absolute bottom-0 right-0 p-4 text-center text-white bg-black/50 font-bold"><span class="inline sm:hidden">Click to View </span>{{ example.name }}</h4>
+    </a>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% include "home-copy.njk" %}

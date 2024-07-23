@@ -118,3 +118,7 @@
 #blog-post .aligncenter {
   @apply w-full w-full sm:w-3/4 mx-auto mt-4;
 }
+
+.page-content a {
+  @apply text-red-500 hover:underline;
+}

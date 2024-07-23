@@ -1,4 +1,7 @@
 {% include "splash.njk" %}
 {% include "contact-form.njk" %}
 {% include "products.njk" %}
+{%- if '/' == page.url -%}
+  {% include "home-examples.njk" %}
+{% endif %}
 {% include "faq.njk" %}
