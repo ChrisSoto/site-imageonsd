@@ -1,7 +1,16 @@
 <div id="hero-copy" class="flex flex-col max-w-screen-xl w-full sm:mb-0 mb-24">
 
     <div class="flex flex-row">
-      <div id="hero-mobile-image" class="basis-full sm:basis-7/12 md:basis-6/12 lg:basis-5/12 sm:pb-4 sm:pb-16 pl-4 bg-[url('/_assets/mobile_temp_2.webp')]">
+      {%- if '/' == page.url -%}
+        <div id="hero-mobile-image" class="basis-full sm:basis-7/12 md:basis-6/12 lg:basis-5/12 sm:pb-4 sm:pb-16 pl-4 bg-[url('/_assets/mobile_temp_2.webp')]">
+      {%- elif '/custom-t-shirts/' in page.url -%}
+        <div id="hero-mobile-image" class="basis-full sm:basis-7/12 md:basis-6/12 lg:basis-5/12 sm:pb-4 sm:pb-16 pl-4 bg-[url('/_assets/mobile_temp_1.webp')]">
+      {%- elif '/embroidery/' in page.url -%}
+        <div id="hero-mobile-image" class="basis-full sm:basis-7/12 md:basis-6/12 lg:basis-5/12 sm:pb-4 sm:pb-16 pl-4 bg-[url('/_assets/mobile_temp_3.webp')]">
+      {%- else -%}
+        <div id="hero-mobile-image" class="basis-full sm:basis-7/12 md:basis-6/12 lg:basis-5/12 sm:pb-4 sm:pb-16 pl-4 bg-[url('/_assets/mobile_temp_2.webp')]">
+      {%- endif -%}
+      
 
         <h1 class="font-black text-3xl mb-4">
           {% if cityService %}
@@ -47,7 +56,15 @@
       
       </div>
 
-      <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/basic-background.webp')]" id="hero-image"></div>
+      {%- if '/' == page.url -%}
+        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/basic-background.webp')]" id="hero-image"></div>
+      {%- elif '/custom-t-shirts/' in page.url -%}
+        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/t-shirt-background.webp')] h-[500px]" id="hero-image"></div>
+      {%- elif '/embroidery/' in page.url -%}
+        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/embroidery-background.webp')] h-[500px]" id="hero-image"></div>
+      {%- else -%}
+        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/basic-background.webp')]" id="hero-image"></div>
+      {%- endif -%}
 
     </div>
     

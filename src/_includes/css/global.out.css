@@ -720,6 +720,14 @@ video {
   height: 100%;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -942,6 +950,22 @@ video {
 
 .bg-\[url\(\'\/_assets\/mobile_temp_2\.webp\'\)\] {
   background-image: url('/_assets/mobile_temp_2.webp');
+}
+
+.bg-\[url\(\'\/_assets\/t-shirt-background\.webp\'\)\] {
+  background-image: url('/_assets/t-shirt-background.webp');
+}
+
+.bg-\[url\(\'\/_assets\/mobile_temp_1\.webp\'\)\] {
+  background-image: url('/_assets/mobile_temp_1.webp');
+}
+
+.bg-\[url\(\'\/_assets\/embroidery-background\.webp\'\)\] {
+  background-image: url('/_assets/embroidery-background.webp');
+}
+
+.bg-\[url\(\'\/_assets\/mobile_temp_3\.webp\'\)\] {
+  background-image: url('/_assets/mobile_temp_3.webp');
 }
 
 .bg-clip-content {
