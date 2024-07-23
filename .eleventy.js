@@ -7,6 +7,9 @@ import cityData from './src/_data/city-data.js';
 import serviceData from './src/_data/service-data.js';
 import { bullets, heroFn, heroSubFn, titleFn, titleFn2 } from "./src/_data/page-data.js";
 
+function checkFaq(faq) {
+
+}
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -37,7 +40,7 @@ export default function (eleventyConfig) {
             hero: serviceData[i].hero.replace("[[city]]", cityData[j].name),
             heroSub: serviceData[i].heroSub.replace("[[city]]", cityData[j].name),
             heroCopy: serviceData[i].heroCopy,
-            faq: cityData[j].faq.replaceAll("[[city]]", cityData[j].name),
+            faq: cityData[j].faq[serviceData[i].name].replaceAll("[[city]]", cityData[j].name),
             map: cityData[j].map
           };
         } else {
@@ -49,7 +52,7 @@ export default function (eleventyConfig) {
             hero: serviceData[i].hero.replace("[[city]]", cityData[j].name),
             heroSub: serviceData[i].heroSub.replace("[[city]]", cityData[j].name),
             heroCopy: serviceData[i].heroCopy,
-            faq: cityData[j].faq.replaceAll("[[city]]", cityData[j].name),
+            faq: cityData[j].faq[serviceData[i].name].replaceAll("[[city]]", cityData[j].name),
             map: cityData[j].map
           };
         }
@@ -57,7 +60,6 @@ export default function (eleventyConfig) {
         data.push(cityService);
       }
     }
-    
     return data;
   });
 
@@ -67,6 +69,7 @@ export default function (eleventyConfig) {
     const city = "San Diego";
 
     for (let i = 0; i < serviceData.length; i++) {
+      console.log(serviceData[i].name);
       let servData = {
         city: city,
         name: serviceData[i].name,
@@ -95,7 +98,7 @@ export default function (eleventyConfig) {
         hero: heroFn(cityData[i].name, null, null),
         heroSub: heroSubFn(cityData[i].name, null),
         heroCopy: bullets,
-        faq: cityData[i].faq.replaceAll("[[city]]", cityData[i].name),
+        faq: cityData[i].faq['Custom T-Shirts'].replaceAll("[[city]]", cityData[i].name),
       };
       data.push(servData);
     }

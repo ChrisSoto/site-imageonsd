@@ -1,5 +1,6 @@
 import { titleFn, titleFn2 } from "./page-data.js";
 import CustomTShirtFaqs from "./tshirt_faqs.js";
+import EmbroideryFaqs from "./embroidery_faqs.js";
 
 const cityData = [
   {
@@ -83,7 +84,12 @@ const cityData = [
 ]
 
 for (let i = 0; i < cityData.length; i++) {
-  cityData[i].faq = CustomTShirtFaqs[i];
+  cityData[i].faq = {
+    'Custom T-Shirts': CustomTShirtFaqs[i],
+    'Embroidery': EmbroideryFaqs[i],
+    'Banners & Stickers': CustomTShirtFaqs[0],
+    'Engraving': CustomTShirtFaqs[0],
+  }
 }
 
 export default cityData;
