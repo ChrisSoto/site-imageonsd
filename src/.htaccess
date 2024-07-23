@@ -41,8 +41,6 @@
     Redirect 301 /custom-t-shirt-embroidery-and-print/la-jolla/ https://imageonsd.com/services/custom-t-shirts/la-jolla
     Redirect 301 /san-diego-t-shirt-printing/ https://imageonsd.com/services/custom-t-shirts/san-diego
     
-    Redirect 301 /custom-t-shirt-printing/ https://imageonsd.com/services/custom-t-shirts
-    
     
     RewriteCond %{HTTP_HOST} ^www.imageonesd.com [NC]
     RewriteRule ^(.*)$ https://imageonsd.com/$1 [L,R=301]
