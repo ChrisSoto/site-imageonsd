@@ -13,7 +13,8 @@ const cityData = [
     "name": "Chula Vista",
     "title": titleFn("Chula Vista", "Custom T-shirt Printing & Embroidery", "| No Minimums, Fast Turnaround"),
     "description": "San Diego, CA",
-    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215042.7989465555!2d-117.18934040964692!3d32.63165880640078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94e4565c3aacf%3A0x46ccb8734b8f2bd3!2sChula%20Vista%2C%20CA!5e0!3m2!1sen!2sus!4v1714164382895!5m2!1sen!2sus"
+    "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d215042.7989465555!2d-117.18934040964692!3d32.63165880640078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94e4565c3aacf%3A0x46ccb8734b8f2bd3!2sChula%20Vista%2C%20CA!5e0!3m2!1sen!2sus!4v1714164382895!5m2!1sen!2sus",
+    "copy": "test",
   },
   {
     "name": "Spring Valley",

@@ -46,7 +46,7 @@
           {% if cityService %}
             {{ cityService.heroCopy | safe }}
           {% elseif service %}
-            {{ service.heroCopy | safe }}\
+            {{ service.heroCopy | safe }}
           {% elseif city %}
             {{ city.heroCopy | safe }}
           {% else %}
@@ -59,9 +59,17 @@
       {%- if '/' == page.url -%}
         <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/basic-background.webp')]" id="hero-image"></div>
       {%- elif '/custom-t-shirts/' in page.url -%}
-        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/t-shirt-background.webp')] h-[500px]" id="hero-image"></div>
+        {%- if '/santee/' in page.url -%}
+          <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/santee-background.webp')] md:h-[500px]" id="hero-image"></div>
+        {%- else -%}
+          <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/t-shirt-background.webp')] md:h-[500px]" id="hero-image"></div>
+        {%- endif -%}
       {%- elif '/embroidery/' in page.url -%}
-        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/embroidery-background.webp')] h-[500px]" id="hero-image"></div>
+        {%- if '/santee/' in page.url -%}
+          <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/santee-background.webp')] md:h-[500px]" id="hero-image"></div>
+        {%- else -%}
+          <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/embroidery-background.webp')] md:h-[500px]" id="hero-image"></div>
+        {%- endif -%}
       {%- else -%}
         <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/basic-background.webp')]" id="hero-image"></div>
       {%- endif -%}

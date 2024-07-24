@@ -10,4 +10,23 @@
 {%- if '/embroidery/' in page.url -%}
   {% include "embroidery-examples.njk" %}
 {%- endif -%}
+
+{%- if '/chula-vista/' in page.url -%}
+  {% include "copy/chula-vista-copy.njk" %}
+{%- elif '/downtown-san-diego/' in page.url -%}
+  {% include "copy/downtown-sd-copy.njk" %}
+{%- elif '/spring-valley/' in page.url -%}
+  {%- include "copy/spring-valley-copy.njk" -%}
+{%- elif '/santee/' in page.url -%}
+  {%- include "copy/santee-copy.njk" -%}
+{%- elif '/rancho-san-diego/' in page.url -%}
+  {%- include "copy/rancho-san-diego-copy.njk" -%}
+{%- elif '/el-cajon/' in page.url -%}
+  {%- include "copy/el-cajon-copy.njk" -%}
+{%- elif '/lakeside/' in page.url -%}
+  {%- include "copy/lakeside-copy.njk" -%}
+{%- else -%}
+  {# {% include "case-study-copy.njk" %} #}
+{%- endif -%}
+
 {% include "faq.njk" %}

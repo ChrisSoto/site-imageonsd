@@ -15,12 +15,12 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		extensions: "html",
-		formats: ["webp"],
-		defaultAttributes: {
-			loading: "lazy",
-			decoding: "async",
-		},
+    extensions: "html",
+    formats: ["webp"],
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+    },
   });
 
   eleventyConfig.addGlobalData("cityServices", () => {
@@ -31,32 +31,34 @@ export default function (eleventyConfig) {
 
         let cityService = {};
 
-        if (cityData[j].name === 'Lakeside') {
-          cityService = {
-            city: cityData[j].name,
-            name: serviceData[i].name,
-            title: titleFn2(cityData[j].name, serviceData[i].name, '| Hats Polos and More!'),
-            description: serviceData[i].description.replace("[[city]]", cityData[j].name),
-            hero: serviceData[i].hero.replace("[[city]]", cityData[j].name),
-            heroSub: serviceData[i].heroSub.replace("[[city]]", cityData[j].name),
-            heroCopy: serviceData[i].heroCopy,
-            faq: cityData[j].faq[serviceData[i].name].replaceAll("[[city]]", cityData[j].name),
-            map: cityData[j].map
-          };
-        } else {
-          cityService = {
-            city: cityData[j].name,
-            name: serviceData[i].name,
-            title: titleFn(cityData[j].name, serviceData[i].name, '| Custom Designs, Quality Guaranteed, Fast Turnaround'),
-            description: serviceData[i].description.replace("[[city]]", cityData[j].name),
-            hero: serviceData[i].hero.replace("[[city]]", cityData[j].name),
-            heroSub: serviceData[i].heroSub.replace("[[city]]", cityData[j].name),
-            heroCopy: serviceData[i].heroCopy,
-            faq: cityData[j].faq[serviceData[i].name].replaceAll("[[city]]", cityData[j].name),
-            map: cityData[j].map
-          };
+        let city = cityData[j].name
+        let name = serviceData[i].name
+        let title = titleFn(cityData[j].name, serviceData[i].name, '| No Minimums, Fast Turnaround')
+
+        switch (cityData[j].name) {
+          case 'Lakeside':
+            title = 'T-shirt Printing and Custom Embroidery Lakeside | Hats Polos and More!';
+            break;
+
+          case 'Chula Vista':
+            title = 'Chula Vista T-shirt Printing and Custom Embroidery | Hats Polos and More!';
+            break;
+
+          default:
+            break;
         }
-        
+
+        let description = serviceData[i].description.replace("[[city]]", cityData[j].name)
+        let hero = serviceData[i].hero.replace("[[city]]", cityData[j].name)
+        let heroSub = serviceData[i].heroSub.replace("[[city]]", cityData[j].name)
+        let heroCopy = serviceData[i].heroCopy
+        let faq = cityData[j].faq[serviceData[i].name].replaceAll("[[city]]", cityData[j].name)
+        let map = cityData[j].map
+
+        cityService = {
+          city, name, title, description, hero, heroSub, heroCopy, faq, map
+        };
+
         data.push(cityService);
       }
     }
@@ -83,7 +85,7 @@ export default function (eleventyConfig) {
       };
       data.push(servData);
     }
-    
+
     return data;
   });
 
@@ -102,7 +104,7 @@ export default function (eleventyConfig) {
       };
       data.push(servData);
     }
-    
+
     return data;
   });
 
