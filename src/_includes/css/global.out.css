@@ -1022,6 +1022,18 @@ video {
   background-image: url('/_assets/santee-background.webp');
 }
 
+.bg-\[url\(\'\/_assets\/banner-background\.webp\'\)\] {
+  background-image: url('/_assets/banner-background.webp');
+}
+
+.bg-\[url\(\'\/_assets\/engraving-background\.webp\'\)\] {
+  background-image: url('/_assets/engraving-background.webp');
+}
+
+.bg-\[url\(\'\/_assets\/chula-vista-background\.webp\'\)\] {
+  background-image: url('/_assets/chula-vista-background.webp');
+}
+
 .bg-clip-content {
   background-clip: content-box;
 }

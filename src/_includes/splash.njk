@@ -59,17 +59,29 @@
       {%- if '/' == page.url -%}
         <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/basic-background.webp')]" id="hero-image"></div>
       {%- elif '/custom-t-shirts/' in page.url -%}
+
         {%- if '/santee/' in page.url -%}
           <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/santee-background.webp')] md:h-[500px]" id="hero-image"></div>
+        {%- elif '/chula-vista/' in page.url -%}
+            <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/chula-vista-background.webp')] md:h-[500px]" id="hero-image"></div>
         {%- else -%}
           <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/t-shirt-background.webp')] md:h-[500px]" id="hero-image"></div>
         {%- endif -%}
+
       {%- elif '/embroidery/' in page.url -%}
+
         {%- if '/santee/' in page.url -%}
           <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/santee-background.webp')] md:h-[500px]" id="hero-image"></div>
+        {%- elif '/chula-vista/' in page.url -%}
+          <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/chula-vista-background.webp')] md:h-[500px]" id="hero-image"></div>
         {%- else -%}
           <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/embroidery-background.webp')] md:h-[500px]" id="hero-image"></div>
         {%- endif -%}
+        
+      {%- elif '/banners-and-stickers/' in page.url -%}
+        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/banner-background.webp')] md:h-[500px]" id="hero-image"></div>
+      {%- elif '/engraving/' in page.url -%}
+        <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/engraving-background.webp')] md:h-[500px]" id="hero-image"></div>
       {%- else -%}
         <div class="basis-0 sm:basis-5/12 md:basis-6/12 lg:basis-7/12 bg-[url('/_assets/basic-background.webp')]" id="hero-image"></div>
       {%- endif -%}
