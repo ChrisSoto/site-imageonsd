@@ -1034,6 +1034,18 @@ video {
   background-image: url('/_assets/chula-vista-background.webp');
 }
 
+.bg-\[url\(\'\/_assets\/mobile_banners\.webp\'\)\] {
+  background-image: url('/_assets/mobile_banners.webp');
+}
+
+.bg-\[url\(\'\/_assets\/mobile_banner\.webp\'\)\] {
+  background-image: url('/_assets/mobile_banner.webp');
+}
+
+.bg-\[url\(\'\/_assets\/mobile_engraving\.webp\'\)\] {
+  background-image: url('/_assets/mobile_engraving.webp');
+}
+
 .bg-clip-content {
   background-clip: content-box;
 }
