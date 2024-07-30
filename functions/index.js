@@ -22,23 +22,29 @@ exports.addContact = onRequest(
       debug("log add contact - 99", request.body);
       const {name, email, phone, details} = request.body;
 
-      const writeResult = await getFirestore()
-          .collection("contacts")
-          .add({
-            to: "imageonprintingservice@gmail.com, admin@imageonsd.com",
-            message: {
-              subject: `Lead from Site: ${name}`,
-              body: `Name: ${name}\n
-                Phone: ${phone}\n
-                Details: ${details}\n
-                Email: ${email}`,
-              html: `<p>Name: ${name}</p><br>
-                <p>Email: <a href="mailto:${email}">${email}</a></p><br>
-                <p>Phone: <a href="tel:${phone}">${phone}</a></p><br>
-                <p>Details: ${details}</p>`,
-            },
-          });
-      response.json({result: `Message written with ID: ${writeResult.id}`});
+      let writeResult = null;
+
+      if (!email) {
+        response.status(400).json({error: "Missing required fields"});
+      } else {
+        writeResult = await getFirestore()
+            .collection("contacts")
+            .add({
+              to: "imageonprintingservice@gmail.com, admin@imageonsd.com",
+              message: {
+                subject: `Lead from Site: ${name}`,
+                body: `Name: ${name}\n
+                  Phone: ${phone}\n
+                  Details: ${details}\n
+                  Email: ${email}`,
+                html: `<p>Name: ${name}</p><br>
+                  <p>Email: <a href="mailto:${email}">${email}</a></p><br>
+                  <p>Phone: <a href="tel:${phone}">${phone}</a></p><br>
+                  <p>Details: ${details}</p>`,
+              },
+            });
+        response.json({result: `Message written with ID: ${writeResult.id}`});
+      }
     });
 
 
